@@ -1,3 +1,4 @@
 *.avi
 __pycache/
+utils/__pycache__/
 weights/
