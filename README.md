@@ -8,7 +8,7 @@
 * pose_test03.py: 包含姿态估计+跟踪+可视化, NMS放在模型中
 
 ## 2. 对比
-&emsp;&emsp;如果要对比NMS在模型中与在模型外的DeepStream运行速度，只需分别运行pose_test02.py与pose_test03.py即可，二者的区别仅在于NMS处理部分, 运行前需要设置好视频路径 INPUT_STREAM , 如果要在 jeson nx 本地可视化结果, 需设置在运行上述python脚本时设置环境变量export DISPLAY=:0 指定显示设别为本地，将nx接个显示器即可与代码运行同步显示，或者设置代码中的DEBUG为True, 保持推理结果视频到本地
+&emsp;&emsp;如果要对比NMS在模型中与在模型外的DeepStream运行速度，只需分别运行pose_test02.py与pose_test03.py即可，二者的区别仅在于NMS处理部分, 运行前需要设置好视频路径 INPUT_STREAM , 如果要在 jeson nx 本地可视化结果, 需在运行上述python脚本时设置环境变量export DISPLAY=:0 指定显示设备为本地设备，将nx接个显示器即可与代码运行同步显示，或者设置代码中的DEBUG为True, 保持推理结果视频到本地
 <details>
 <summary>展开</summary>
 
