@@ -21,13 +21,13 @@ from utils.utils import get_total_outshape, postprocess
 from utils.display import dispaly_frame_pose,add_obj_meta
 
 
-MUX_OUTPUT_WIDTH = 640 
-MUX_OUTPUT_HEIGHT =640 
-INFER_SHAPE = (1,3,640,640)
+MUX_OUTPUT_WIDTH = 832 
+MUX_OUTPUT_HEIGHT =832 
+INFER_SHAPE = (1,3,832,832)
 OUT_SHAPE = get_total_outshape(INFER_SHAPE)
 INPUT_STREAM = [
-                # "file:///media/nvidia/SD/project/test/2in1_2.mp4",
-                "file:///media/nvidia/SD/project/test/merge.mp4",
+                "file:///media/nvidia/SD/project/test/2in1_2.mp4",
+                # "file:///media/nvidia/SD/project/test/merge.mp4",
                 ]
 DEBUG = False
 

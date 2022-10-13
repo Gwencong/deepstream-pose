@@ -7,7 +7,8 @@ model-color-format=0
 #Infer Processing Mode 1=Primary Mode 2=Secondary Mode
 process-mode=1
 
-model-engine-file=../weights/yolov5s6_pose_640_ti_lite.trt
+#model-engine-file=../weights/yolov5s6_pose_640_ti_lite.trt
+model-engine-file=/media/nvidia/SD/project/yolo-pose-escalator/weights/yolov5l6_pose-FP16.trt
 
 gie-unique-id=1
 batch-size=1
@@ -25,7 +26,7 @@ maintain-aspect-ratio=1
 #Integer 0: OpenCV groupRectangles() 1: DBSCAN 2: Non Maximum Suppression 3: DBSCAN + NMS Hybrid 4: No clustering
 #cluster-mode=2
 
-infer-dims=3;640;640
+infer-dims=3;832;832
 #output-blob-names=output
 
 #if batch-size!=1
