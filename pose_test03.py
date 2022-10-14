@@ -26,8 +26,8 @@ MUX_OUTPUT_HEIGHT =832
 INFER_SHAPE = (1,3,832,832)
 OUT_SHAPE = get_total_outshape(INFER_SHAPE)
 INPUT_STREAM = [
-                "file:///media/nvidia/SD/project/test/2in1_2.mp4",
-                # "file:///media/nvidia/SD/project/test/merge.mp4",
+                # "file:///media/nvidia/SD/project/test/2in1_2.mp4",
+                "file:///media/nvidia/SD/project/test/no-people.mp4",
                 ]
 DEBUG = False
 

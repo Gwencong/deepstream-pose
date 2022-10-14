@@ -210,6 +210,8 @@ def postprocessNoNMS(model_out,im0_shape,im1_shape,im0=None,conf_thres=0.5,iou_t
     # pred = non_max_suppression(model_out, conf_thres, iou_thres)
     nmsed_indices,nmsed_boxes,nmsed_poses,nmsed_scores = model_out
     batch_index, class_index, box_index = nmsed_indices[...,0],nmsed_indices[...,1],nmsed_indices[...,2]
+    if np.any(np.isnan(box_index)) or np.all(box_index < 0):
+        return [], [], []
     keep_num = np.unique(box_index).size
     # print(box_index)
     assert (box_index[...,keep_num:]-box_index[...,keep_num-1]).sum()==0,f'{box_index}'
